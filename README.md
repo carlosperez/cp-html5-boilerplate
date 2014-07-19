@@ -14,4 +14,5 @@ You should be using LESS, so this will hopefully encourage you. I have compiled 
 
 I've decided to include them in the repo in the event that the user might not be familiar with using Bower. I had no idea about how to use it not too long ago, and figure a lot of people might be in that situation. Besides, I want this to be a clone-and-go resource.
 
+[About Carlos Perez](http://carlosperez.ca)
 
