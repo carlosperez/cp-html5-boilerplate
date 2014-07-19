@@ -543,3 +543,78 @@ Inlined to avoid the additional HTTP request: h5bp.com/r
 /* Group/Clearfix mixin */
 /* Use a Symbolset Icon */
 /* Font Family Shortcut */
+.l-full-width {
+  width: 94%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 360px) {
+  .l-full-width {
+    width: 90%;
+  }
+}
+.l-narrow-column {
+  width: 94%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.l-half {
+  float: left;
+  width: 47.5%;
+  margin-left: 5%;
+}
+.l-half:first-child {
+  margin-left: 0;
+}
+.l-half:last-child {
+  margin-right: 0;
+}
+.l-third,
+.l-one-third {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+}
+.l-third:first-child,
+.l-one-third:first-child {
+  margin-left: 0;
+}
+.l-third:last-child,
+.l-one-third:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 780px) {
+  .l-third,
+  .l-one-third {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .l-third:last-child,
+  .l-one-third:last-child {
+    margin-bottom: 0;
+  }
+}
+.l-two-thirds {
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+}
+.l-two-thirds:first-child {
+  margin-left: 0;
+}
+.l-two-thirds:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 780px) {
+  .l-two-thirds {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .l-two-thirds:last-child {
+    margin-bottom: 0;
+  }
+}
