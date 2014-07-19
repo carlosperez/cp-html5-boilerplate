@@ -3,6 +3,7 @@
   "directory": "public/components",
   "dependencies": {
     "normalize-css": "~3.0.1",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "html5shiv": "~3.7.2"
   }
 }
