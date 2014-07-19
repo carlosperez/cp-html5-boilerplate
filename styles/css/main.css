@@ -529,3 +529,17 @@ Inlined to avoid the additional HTTP request: h5bp.com/r
     page-break-after: avoid;
   }
 }
+/* Rounded corner mixins */
+/* Animate */
+/* Rotate */
+/* Transition */
+/* Padding and Margin Cheats */
+/* Responsive Image mixin from Bootstrap */
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/* Group/Clearfix mixin */
+/* Use a Symbolset Icon */
+/* Font Family Shortcut */

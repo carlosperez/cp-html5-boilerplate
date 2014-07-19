@@ -1,0 +1,135 @@
+/* Rounded corner mixins */
+.rounded(@radius:5px) {
+  -webkit-border-radius: @radius; 
+     -moz-border-radius: @radius; 
+          border-radius: @radius;
+}
+
+.rounded-left(@radius:5px) {
+  -webkit-border-radius: @radius 0 0 @radius;  
+     -moz-border-radius: @radius 0 0 @radius;
+          border-radius: @radius 0 0 @radius;
+}
+
+.rounded-right(@radius:5px) {
+  -webkit-border-radius: 0 @radius @radius 0;  
+     -moz-border-radius: 0 @radius @radius 0; 
+          border-radius: 0 @radius @radius 0;
+}
+
+/* Animate */
+
+.animate(@animate-values) {
+  -webkit-animation: @animate-values;
+     -moz-animation: @animate-values;
+          animation: @animate-values;
+}
+
+/* Rotate */
+
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+
+/* Transition */
+
+.transition (@transition) {
+-webkit-transition: @transition;  
+   -moz-transition: @transition;
+    -ms-transition: @transition; 
+     -o-transition: @transition;  
+}
+
+/* Padding and Margin Cheats */
+
+.padding-vertical(@padding-top, @padding-bottom) {
+  padding-top: @padding-top;
+  padding-bottom:  @padding-bottom;
+}
+
+
+.padding-horizontal(@padding-left, @padding-right) {
+  padding-left: @padding-left;
+  padding-right:  @padding-right;
+}
+
+.margin-vertical(@margin-top, @margin-bottom) {
+  margin-top: @margin-top;
+  margin-bottom:  @margin-bottom;
+}
+
+
+.margin-horizontal(@margin-left, @margin-right) {
+  margin-left: @margin-left;
+  margin-right:  @margin-right;
+}
+
+// Retina images from Bootstrap 3
+//
+// Short retina mixin for setting background-image and -size. Note that the
+// spelling of `min--moz-device-pixel-ratio` is intentional.
+
+.img-retina(@file-1x; @file-2x; @width-1x; @height-1x) {
+  background-image: url("@{file-1x}");
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background-image: url("@{file-2x}");
+    background-size: @width-1x @height-1x;
+  }
+}
+
+/* Responsive Image mixin from Bootstrap */
+
+.img-responsive {
+ display: block;
+ height: auto;
+ max-width: 100%;
+}
+
+/* Group/Clearfix mixin */
+
+.group() {
+  &:before { 
+    content: ''; 
+    display: block; 
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/* Use a Symbolset Icon */
+
+.iconize() {
+  display: inline-block;
+  font-family: "SSGeomiconsSquared";
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Font Family Shortcut */
+
+.font-family() {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+}
