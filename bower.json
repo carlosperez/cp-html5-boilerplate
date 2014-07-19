@@ -1,6 +1,5 @@
 {
   "name": "cp-html5-boilerplate",
-  "directory": "public/components",
   "dependencies": {
     "normalize-css": "~3.0.1",
     "jquery": "~2.1.1",
