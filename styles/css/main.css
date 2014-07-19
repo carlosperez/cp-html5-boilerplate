@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic);
 /* The base styles we need */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -618,4 +619,58 @@ Inlined to avoid the additional HTTP request: h5bp.com/r
   .l-two-thirds:last-child {
     margin-bottom: 0;
   }
+}
+/* The typography styles, load in your fonts, set your font family and the like */
+body {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  color: #333333;
+}
+a {
+  border-bottom: 1px dotted;
+  padding-bottom: 0;
+  transition: all 0.05s ease-out;
+  text-decoration: none;
+}
+a:hover,
+a:target {
+  transition: all .05s linear;
+}
+a:active {
+  position: relative;
+  top: .05rem;
+}
+h1 {
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 1.65rem;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 .5rem;
+}
+h2 + p {
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 1rem 0 .35rem;
+}
+h3 + p {
+  margin-top: 0;
+}
+h4 {
+  font-weight: 400;
+}
+ul li,
+ol li {
+  margin-bottom: .5rem;
+}
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
 }
