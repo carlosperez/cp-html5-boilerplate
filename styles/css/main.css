@@ -620,6 +620,7 @@ Inlined to avoid the additional HTTP request: h5bp.com/r
     margin-bottom: 0;
   }
 }
+/* Place your colour variables here */
 /* The typography styles, load in your fonts, set your font family and the like */
 body {
   font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
