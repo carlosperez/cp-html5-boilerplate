@@ -35,12 +35,16 @@
   width: 30%;
   margin-left: 5%;
 
-  &:first-child {
+  &:nth-child(3n+1) {
     margin-left: 0;
   }
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
+  }
+
+  &:nth-child(3n+1) {
+    clear: both;
   }
 
   @media screen and (max-width: 780px) {
