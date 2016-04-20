@@ -1,8 +1,11 @@
 // Basic grid using thirds. That's it!
 
+@maxWidth = 1440px;
+@narrowWidth = 860px;
+
 .l-full-width {
   width: 94%;
-  max-width: 1440px;
+  max-width: @maxWidth;
   margin: 0 auto;
 
   @media screen and (max-width: 360px) {
@@ -24,10 +27,12 @@
   &:first-child {
     margin-left: 0;
   }
-  
-  &:last-child {
-    margin-right: 0;
-  }
+
+  @media screen and (max-width: 780px) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  } 
 }
 
 .l-third, .l-one-third {
@@ -63,10 +68,6 @@
 
   &:first-child {
     margin-left: 0;
-  }
-
-  &:last-child {
-    margin-right: 0;
   }
 
   @media screen and (max-width: 780px) {
